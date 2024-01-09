@@ -19,10 +19,12 @@ function yourInfo() {
           type="number"
           placeholder=" e.g. +1 234 567 890"
         ></input>
-        <Link to={"/SelectPlan"}>
-          <button>Next Step</button>
-        </Link>
       </form>
+      <div className="containerNextButton">
+        <Link to={"/SelectPlan"}>
+          <button className="nextButton">Next Step</button>
+        </Link>
+      </div>
     </div>
   );
 }
