@@ -1,4 +1,9 @@
+import { Switch } from "@mui/material";
+import { Link } from "react-router-dom";
 export default function SelectPlan() {
+  const handleClickSwitch = (e) => {
+    console.log(e.target.checked);
+  };
   return (
     <>
       <div className="containerPlan">
@@ -22,6 +27,19 @@ export default function SelectPlan() {
             <h4>Pro</h4>
             <span>$15/mo</span>
           </div>
+        </div>
+        <div className="monathlyOrYearlyContainer">
+          <span>Monthly</span>
+          <Switch onClick={handleClickSwitch} />
+          <span>Yearly</span>
+        </div>
+        <div className="buttonsSelectPlan">
+          <Link to={"/yourInfo"}>
+            <button className="goBackBtn">Go back</button>
+          </Link>
+          <Link to={"/AddOns"}>
+            <button className="nextButton">Next Step</button>
+          </Link>
         </div>
       </div>
     </>

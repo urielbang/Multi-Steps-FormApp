@@ -120,10 +120,10 @@ body {
   background-image: url(assets/images/icon-arcade.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  width: 40;
+  height: 40;
 
-  width: 3vw;
-  height: 12vh;
-  /* border-radius: 100%; */
+  padding: 25px;
 }
 .productsCards {
   display: flex;
@@ -131,6 +131,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  text-align: center;
 }
 .cardPlan {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
@@ -138,8 +139,58 @@ body {
   width: 10vw;
   height: 30vh;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .cardPlan:hover {
   box-shadow: rgba(1, 1, 199, 0.25) 0px 13px 27px -5px,
     rgba(5, 18, 59, 0.3) 0px 8px 25px -8px;
+}
+.advancedPic {
+  background-image: url(assets/images/icon-advanced.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40;
+  height: 40;
+
+  padding: 25px;
+}
+.proPic {
+  background-image: url(assets/images/icon-pro.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40;
+  height: 40;
+
+  padding: 25px;
+}
+.monathlyOrYearlyContainer {
+  display: flex;
+
+  background-color: rgba(128, 128, 128, 0.097);
+
+  align-items: center;
+  border-radius: 1rem;
+  height: 10vh;
+  margin-bottom: 7vh;
+  justify-content: center;
+}
+.buttonsSelectPlan {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 2vh;
+}
+.goBackBtn {
+  border: none;
+  color: hsl(213, 74%, 27%);
+  font-weight: bold;
+  cursor: pointer;
+}
+.goBackBtn:hover {
+  color: hsla(213, 90%, 57%, 0.671);
 }
